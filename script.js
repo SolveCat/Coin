@@ -13,8 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const confirmDepositBtn = document.getElementById('confirm-deposit');
     const depositErrorMessage = document.getElementById('deposit-error-message');
     const clearBalanceBtn = document.getElementById('clear-balance-btn');
-
-    const futureValue100Days = document.getElementById('future-value-100-days');
     const estimatedValue30Days = document.getElementById('estimated-value-30-days');
     const estimatedValueYear = document.getElementById('estimated-value-year');
 
@@ -80,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function updateEstimatedValues() {
-        futureValue100Days.textContent = `${calculateFutureValue(portfolioBalance, 100).toFixed(2)} USD`;
         estimatedValue30Days.textContent = `${calculateFutureValue(portfolioBalance, 30).toFixed(2)} USD`;
 
         const daysTo1000 = calculateDaysToReachTarget(portfolioBalance, 1000);
