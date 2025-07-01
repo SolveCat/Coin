@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panel Elaenia</title>
+    <title>Panel Pfuni</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
@@ -17,22 +17,12 @@
         <main class="main-content">
             <section class="dashboard-section">
                 <div class="portfolio-card card">
-                    <h3>Twoje Portfolio</h3>
+                    <h3>Twój portfel</h3>
                     <div class="portfolio-value">
                         <span class="main-value" id="portfolio-main-value">0 USD</span>
-                        <span class="change" id="portfolio-change">0 USD (0%)</span>
+
                     </div>
-                    <div class="total-balance">
-                        <span class="label">Całkowity Balans</span>
-                        <span class="value" id="total-balance-value">$0.00</span>
-                    </div>
-                    <div class="portfolio-chart-controls">
-                        <button class="control-button active">WSZYSTKO</button>
-                        <button class="control-button">1M</button>
-                        <button class="control-button">6M</button>
-                        <button class="control-button">1R</button>
-                        <button class="control-button">Do dziś</button>
-                    </div>
+
                     <div class="portfolio-action-buttons">
                         <button class="action-button buy-button" id="open-deposit-modal"><i class="fa-solid fa-plus"></i> Wpłać</button>
                         <button class="action-button sell-button" id="clear-balance-btn"><i class="fa-solid fa-broom"></i> Wyczyść</button>
@@ -47,10 +37,6 @@
                         <div class="stat-item">
                             <span class="stat-label">Dzienny Wzrost</span>
                             <span class="stat-value">1.8%</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-label">Wartość Przyszła (100 Dni)</span>
-                            <span class="stat-value" id="future-value-100-days">N/A</span>
                         </div>
                         <div class="stat-item">
                             <span class="stat-label">Szacowana Wartość (30 Dni)</span>
