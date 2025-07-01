@@ -110,7 +110,7 @@ document.addEventListener('DOMContentLoaded', () => {
         milestones.push({
             type: 'fixed',
             value: 1000,
-            label: Max efektywna kwota kwantyzacji dla poziomu G1', // Zmieniony tekst etykiety
+            label: 'Max efektywna kwota kwantyzacji dla poziomu G1', // Zmieniony tekst etykiety
             target: 1000
         });
 
