@@ -74,6 +74,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-height: 730px;
 }
 
 .portfolio-card h3 {
@@ -83,13 +84,15 @@ body::-webkit-scrollbar-thumb {
     border-bottom: 1px solid #3f3f6d; /* Linia pod nagłówkiem */
     padding-bottom: 15px;
     margin-bottom: 15px;
+    max-height: 730px;
 }
 
 .portfolio-card .portfolio-value .main-value {
     font-size: 42px; /* Większa czcionka */
     font-weight: bold;
     color: #a78bff; /* Fioletowy */
-    text-shadow: 0 0 8px rgba(167, 139, 255, 0.5); /* Lekki cień na tekście */
+    text-shadow: 0 0 8px rgba(167, 139, 255, 0.5);
+    max-height: 730px;/* Lekki cień na tekście */
 }
 
 /* Dostosowanie stylu dla 0 wartości w portfolio */
@@ -97,22 +100,26 @@ body::-webkit-scrollbar-thumb {
 .portfolio-card .total-balance .value {
     font-weight: bold;
     color: #a78bff;
+    max-height: 730px;
 }
 .portfolio-card .portfolio-value .main-value {
     font-size: 36px;
     text-shadow: none;
+    max-height: 730px;
 }
 .portfolio-card .portfolio-value .change {
     font-size: 18px;
     color: #28a745; /* Zielony dla pozytywnej zmiany */
     margin-left: 10px;
     font-weight: 600;
+    max-height: 730px;
 }
 
 .portfolio-card .total-balance {
     border-top: 1px solid #3f3f6d;
     padding-top: 20px;
     margin-top: 15px;
+    max-height: 730px;
 }
 
 .portfolio-card .total-balance .label {
@@ -120,12 +127,14 @@ body::-webkit-scrollbar-thumb {
     color: #ccc;
     display: block;
     margin-bottom: 8px;
+    max-height: 730px;
 }
 
 .portfolio-card .total-balance .value {
     font-size: 32px;
     font-weight: bold;
     color: #e0e0e0;
+    max-height: 730px;
 }
 
 .portfolio-chart-controls {
