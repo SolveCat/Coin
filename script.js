@@ -109,9 +109,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // ZMODYFIKOWANY KAMIEŃ MILOWY: Osiągnij 500 USD z dopiskiem
         milestones.push({
             type: 'fixed',
-            value: 500,
-            label: 'Osiągnij 500 USD (Maksymalna wartość dla G1)', // Zmieniony tekst etykiety
-            target: 500
+            value: 1000,
+            label: Max efektywna kwota kwantyzacji dla poziomu G1', // Zmieniony tekst etykiety
+            target: 1000
         });
 
         let milestonesHtml = '';
