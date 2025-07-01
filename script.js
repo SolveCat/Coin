@@ -42,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updatePortfolioUI() {
         portfolioMainValue.textContent = `${portfolioBalance.toFixed(2)} USD`;
+
         updateGrowthChart();
         updateEstimatedValues();
         updateGrowthMilestones();
@@ -111,9 +112,9 @@ document.addEventListener('DOMContentLoaded', () => {
         // ZMODYFIKOWANY KAMIEŃ MILOWY: Osiągnij 500 USD z dopiskiem
         milestones.push({
             type: 'fixed',
-            value: 1000,
-            label: 'Max efektywna kwota kwantyzacji dla poziomu g1', // Zmieniony tekst etykiety
-            target: 1000
+            value: 500,
+            label: 'Osiągnij 500 USD (Maksymalna wartość dla G1)', // Zmieniony tekst etykiety
+            target: 500
         });
 
         let milestonesHtml = '';
