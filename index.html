@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel Elaenia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-zoom@2.0.1/dist/chartjs-plugin-zoom.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <main class="main-content">
+            <section class="dashboard-section">
+                <div class="portfolio-card card">
+                    <h3>Twoje Portfolio</h3>
+                    <div class="portfolio-value">
+                        <span class="main-value" id="portfolio-main-value">0 USD</span>
+                    </div>
+
+                    <div class="portfolio-action-buttons">
+                        <button class="action-button buy-button" id="open-deposit-modal"><i class="fa-solid fa-plus"></i> Wpłać</button>
+                        <button class="action-button sell-button" id="clear-balance-btn"><i class="fa-solid fa-broom"></i> Wyczyść</button>
+                    </div>
+                </div>
+
+                <div class="main-chart card">
+                    <div class="chart-scroll-container">
+                        <canvas id="growthChart"></canvas>
+                    </div>
+                    <div class="chart-stats">
+                        <div class="stat-item">
+                            <span class="stat-label">Dzienny Wzrost</span>
+                            <span class="stat-value">1.8%</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Wartość Przyszła (100 Dni)</span>
+                            <span class="stat-value" id="future-value-100-days">N/A</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Szacowana Wartość (30 Dni)</span>
+                            <span class="stat-value" id="estimated-value-30-days">N/A</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-label">Do 1000 USD</span>
+                            <span class="stat-value" id="estimated-value-year">N/A</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="follow-section">
+                    <h3>Kamienie Milowe Wzrostu</h3>
+                    <div class="crypto-follow-list" id="growth-milestones-list">
+                        <div class="empty-state" id="growth-milestones-empty-state">
+                            Wpłać środki, aby zobaczyć swoje kamienie milowe wzrostu!
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="full-width-text card">
+                <p>
+                    CoinPlex
+                </p>
+            
+            </div>
+            
+        </main>
+    </div>
+
+    <div id="deposit-modal" class="modal">
+        <div class="modal-content card">
+            <span class="close-button">&times;</span>
+            <h2>Wpłać środki</h2>
+            <p>Minimalna kwota wpłaty: 100 USD</p>
+            <div class="input-group">
+                <label for="deposit-amount">Kwota (USD):</label>
+                <input type="number" id="deposit-amount" min="100" value="100" placeholder="Wpisz kwotę">
+            </div>
+            <button id="confirm-deposit" class="action-button buy-button">Potwierdź wpłatę</button>
+            <p id="deposit-error-message" class="error-message"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
