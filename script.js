@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // ====== ZMIENNE DLA KALKULATORA WALUT =======
     const usdInput = document.getElementById('usd-input');
     const plnOutput = document.getElementById('pln-output');
-    const exchangeRateDisplay = document.getElementById('exchange-rate-display');
+    
 
     // Stały kurs wymiany USD na PLN
     const FIXED_EXCHANGE_RATE = 3.59;
